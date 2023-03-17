@@ -1,8 +1,40 @@
 ﻿/**/
-Console.WriteLine("Escolha a letra central do diamante:");
-var letraEscolhida = Convert.ToChar(Console.ReadLine()!);
-
+bool ehValida = true;
+char letraEscolhida = default;
 var alfabeto = "ABCDEFGHJKLMNOPQRSTUVXWYZ";
+
+Console.Clear();
+Console.WriteLine("--- Diamante de Letras ---\n");
+
+#region recebe e valida dados de entrada
+do
+{
+    Console.Clear();
+    Console.Write("Para construir seu diamante, digite uma letra maiúscula a partir do B: ");
+    string letraInput = Console.ReadLine()!;
+
+    letraEscolhida = letraInput.Length > 1 ? default : Convert.ToChar(letraInput);
+
+    if (letraEscolhida == default)
+    {
+        ehValida = false;
+    }
+
+    int letraNaAsc = Convert.ToInt16(letraEscolhida);
+    ehValida = letraNaAsc > 65 && letraNaAsc <= 90;
+
+    if (!ehValida)
+    {
+        Console.WriteLine("A Letra informada deve ser no formato maiúsculo e a paritr da letra B!\n Tecle para continuar...");
+        Console.ReadKey();
+        continue;
+    }
+
+} while (!ehValida);
+
+#endregion
+
+Console.Clear();
 
 #region recebe posicao da letra escolhida no array alfabeto
 
@@ -90,3 +122,4 @@ for (int i = 0; i < letras; i++)
     Console.WriteLine();
 }
 #endregion
+
