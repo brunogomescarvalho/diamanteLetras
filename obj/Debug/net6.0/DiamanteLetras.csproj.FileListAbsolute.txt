@@ -1,0 +1,15 @@
+C:\AP\Modulo_1\DiamanteLetras\bin\Debug\net6.0\DiamanteLetras.exe
+C:\AP\Modulo_1\DiamanteLetras\bin\Debug\net6.0\DiamanteLetras.deps.json
+C:\AP\Modulo_1\DiamanteLetras\bin\Debug\net6.0\DiamanteLetras.runtimeconfig.json
+C:\AP\Modulo_1\DiamanteLetras\bin\Debug\net6.0\DiamanteLetras.dll
+C:\AP\Modulo_1\DiamanteLetras\bin\Debug\net6.0\DiamanteLetras.pdb
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.csproj.AssemblyReference.cache
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.GeneratedMSBuildEditorConfig.editorconfig
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.AssemblyInfoInputs.cache
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.AssemblyInfo.cs
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.csproj.CoreCompileInputs.cache
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.dll
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\refint\DiamanteLetras.dll
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.pdb
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\DiamanteLetras.genruntimeconfig.cache
+C:\AP\Modulo_1\DiamanteLetras\obj\Debug\net6.0\ref\DiamanteLetras.dll
