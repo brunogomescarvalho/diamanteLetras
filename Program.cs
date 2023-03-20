@@ -3,7 +3,7 @@ bool ehValida = true;
 var alfabeto = "ABCDEFGHJKLMNOPQRSTUVXWYZ";
 
 Console.Clear();
-Console.WriteLine("--- Diamante de Letras ---\n");
+Console.WriteLine("--- Diamante de posicao ---\n");
 
 #region recebe e valida dados de entrada
 do
@@ -15,7 +15,7 @@ do
     letraEscolhida = letraInput.Length > 1 ? default : Convert.ToChar(letraInput);
 
     int letraNaAsc = Convert.ToInt16(letraEscolhida);
-    
+
     ehValida = letraNaAsc > 65 && letraNaAsc <= 90;
 
     if (!ehValida)
@@ -67,7 +67,11 @@ for (int i = 0; i < posicaoLetra; i++)
         {
             Console.Write(alfabeto[i]);
         }
-        Console.Write(" ");
+        if (j >= 0 && j < caracteresPorLinha - 1)
+        {
+            Console.Write(" ");
+        }
+
     }
     espacosEmBranco--;
     caracteresPorLinha += 2;
@@ -84,7 +88,10 @@ for (int j = 0; j <= tamanhoLinha - 2; j++)
     {
         Console.Write(letraEscolhida);
     }
-    Console.Write(" ");
+    if (j >= 0 && j <= caracteresPorLinha - 2)
+    {
+        Console.Write(" ");
+    }
 }
 Console.WriteLine();
 
@@ -93,9 +100,9 @@ Console.WriteLine();
 #region escreve o segundo triangulo
 
 espacosEmBranco = 0;
-var letras = posicaoLetra;
+var posicao = posicaoLetra;
 
-for (int i = 0; i < letras; i++)
+for (int i = 0; i < posicao; i++)
 {
 
     for (int l = 0; l <= espacosEmBranco; l++)
@@ -109,7 +116,10 @@ for (int i = 0; i < letras; i++)
         {
             Console.Write(alfabeto[posicaoLetra - 1]);
         }
-        Console.Write(" ");
+        if (j >= 0 && j < caracteresPorLinha - 3)
+        {
+            Console.Write(" ");
+        }
     }
     espacosEmBranco++;
     posicaoLetra--;
