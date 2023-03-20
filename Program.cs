@@ -1,6 +1,5 @@
-﻿/**/
+﻿char letraEscolhida = default;
 bool ehValida = true;
-char letraEscolhida = default;
 var alfabeto = "ABCDEFGHJKLMNOPQRSTUVXWYZ";
 
 Console.Clear();
@@ -15,12 +14,8 @@ do
 
     letraEscolhida = letraInput.Length > 1 ? default : Convert.ToChar(letraInput);
 
-    if (letraEscolhida == default)
-    {
-        ehValida = false;
-    }
-
     int letraNaAsc = Convert.ToInt16(letraEscolhida);
+    
     ehValida = letraNaAsc > 65 && letraNaAsc <= 90;
 
     if (!ehValida)
